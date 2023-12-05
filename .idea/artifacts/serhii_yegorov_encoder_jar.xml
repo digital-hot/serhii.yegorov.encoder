@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="serhii.yegorov.encoder:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/serhii_yegorov_encoder_jar</output-path>
+    <root id="archive" name="serhii.yegorov.encoder.jar">
+      <element id="module-output" name="serhii.yegorov.encoder" />
+    </root>
+  </artifact>
+</component>
