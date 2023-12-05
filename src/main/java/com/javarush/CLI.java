@@ -59,7 +59,7 @@ public class CLI {
     }
 
     private static void bruteForceDecrypt(String filePath) {
-        // Додайте код для автоматичного підбору ключа та розшифрування файлу
+        //TODO Додайте код для автоматичного підбору ключа та розшифрування файлу
         System.out.println("Brute-force decrypting file: " + filePath);
     }
 
