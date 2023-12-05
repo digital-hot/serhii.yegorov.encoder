@@ -1,9 +1,7 @@
 package com.javarush;
 
 //Клас для взаємодії з користувачем через командний рядок.
-import java.io.IOException;
 import java.util.Collections;
-import java.util.List;
 import java.util.Scanner;
 
 public class CLI {
@@ -43,20 +41,20 @@ public class CLI {
     private static void encryptFile(String filePath, int key) {
         // Додайте код для шифрування файлу з вказаним ключем
         FileService fileService = new FileService();
-        String listSt = fileService.readLines(filePath);
+        String listSt = fileService.readString(filePath);
         String encrypt = CaesarCipher.encrypt(listSt, key);
 
-        fileService.writeLines(filePath+"ENCRYPT", Collections.singletonList(encrypt));
+        fileService.writeLines(filePath+"ENCRYPT", encrypt);
         System.out.println("Encrypting file: " + filePath + " with key: " + key);
     }
 
     private static void decryptFile(String filePath, int key) {
         // Додайте код для розшифрування файлу з вказаним ключем
         FileService fileService = new FileService();
-        String listSt = fileService.readLines(filePath);
+        String listSt = fileService.readString(filePath);
         String encrypt = CaesarCipher.decrypt(listSt, key);
 
-        fileService.writeLines(filePath+"DECRYPT", Collections.singletonList(encrypt));
+        fileService.writeLines(filePath+"DECRYPT", encrypt);
         System.out.println("Decrypting file: " + filePath + " with key: " + key);
     }
 

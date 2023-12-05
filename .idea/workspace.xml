@@ -9,14 +9,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="37ea55ff-c167-4e51-84e8-0cb00c2cbb7a" name="Changes" comment="Added classes">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/serhii_yegorov_encoder_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/MANIFEST.MF" afterDir="false" />
+    <list default="true" id="37ea55ff-c167-4e51-84e8-0cb00c2cbb7a" name="Changes" comment="added implementation worked">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/releases/1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/releases/1ENCRYPT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/releases/1ENCRYPTDECRYPT" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/CLI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javarush/CLI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/CaesarCipher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javarush/CaesarCipher.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/FileService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javarush/FileService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javarush/Runner.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,6 +60,27 @@
       <recent name="$PROJECT_DIR$/releases" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration name="Runner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.javarush.Runner" />
+      <module name="serhii.yegorov.encoder" />
+      <option name="PROGRAM_PARAMETERS" value="ENCRYPT $PROJECT_DIR$/releases/1.txt 20 " />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.javarush.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Runner" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -86,7 +106,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701785961342</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="added implementation worked">
+      <option name="closed" value="true" />
+      <created>1701795285693</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1701795285693</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -103,6 +131,29 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Creating a project" />
     <MESSAGE value="Added classes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added classes" />
+    <MESSAGE value="added implementation worked" />
+    <option name="LAST_COMMIT_MESSAGE" value="added implementation worked" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/javarush/CLI.java</url>
+          <line>46</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="Paths.get(filePath).getFileName()" />
+        <watch expression="Paths.get(filePath).getFileSystem()" />
+        <watch expression="Paths.get(filePath).toAbsolutePath()" />
+        <watch expression="Paths.get(filePath).toFile()" />
+        <watch expression="Paths.get(filePath).toRealPath()" />
+        <watch expression="Paths.get(filePath).getRoot()" />
+        <watch expression="Paths.get(filePath).getParent()" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

@@ -10,7 +10,7 @@ import java.util.List;
 
 public class FileService {
 
-    public String readLines(String filePath)  {
+    public String readString(String filePath)  {
         try {
             return Files.readString(Path.of(filePath));//Files.readAllLines(Path.of(filePath));
         } catch (IOException e) {
@@ -18,9 +18,9 @@ public class FileService {
         }
     }
 
-    public void writeLines(String filePath, List<String> lines) {
+    public void writeLines(String filePath, String lines) {
         try {
-            Files.write(Path.of(filePath), lines, StandardOpenOption.CREATE, StandardOpenOption.WRITE);
+            Files.writeString(Path.of(filePath), lines, StandardOpenOption.CREATE, StandardOpenOption.WRITE);
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
