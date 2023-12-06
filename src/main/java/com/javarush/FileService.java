@@ -12,7 +12,7 @@ public class FileService {
 
     public String readString(String filePath)  {
         try {
-            return Files.readString(Path.of(filePath));//Files.readAllLines(Path.of(filePath));
+            return Files.readString(Path.of(filePath));
         } catch (IOException e) {
             throw new RuntimeException(e);
         }

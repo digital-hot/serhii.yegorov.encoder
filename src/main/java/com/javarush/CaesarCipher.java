@@ -24,9 +24,9 @@ public class CaesarCipher {
         return encrypt(encryptedText, -key);
     }
 
-    private static char shiftLetter(char letter, int key) {
-        char base = Character.isUpperCase(letter) ? 'A' : 'a';
-        return (char) ((letter - base + key + ALPHABET_SIZE) % ALPHABET_SIZE + base);
+    private static char shiftLetter(char line, int key) {
+        char base = Character.isUpperCase(line) ? 'A' : 'a';
+        return (char) ((line - base + key + ALPHABET_SIZE) % ALPHABET_SIZE + base);
     }
 
 }

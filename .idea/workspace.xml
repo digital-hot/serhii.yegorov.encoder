@@ -9,12 +9,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="37ea55ff-c167-4e51-84e8-0cb00c2cbb7a" name="Changes" comment="added implementation worked">
+    <list default="true" id="37ea55ff-c167-4e51-84e8-0cb00c2cbb7a" name="Changes" comment="add //TODO">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/releases/1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/releases/1ENCRYPT" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/releases/1ENCRYPTDECRYPT" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/CLI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javarush/CLI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/releases/1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/test" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/releases/serhii.yegorov.encoder.jar" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/serhii.yegorov.encoder.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/CaesarCipher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javarush/CaesarCipher.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/FileService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javarush/FileService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -30,6 +31,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -49,7 +55,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "dev",
     "project.structure.last.edited": "Artifacts",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2"
@@ -57,6 +63,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources" />
       <recent name="$PROJECT_DIR$/releases" />
     </key>
   </component>
@@ -64,7 +71,7 @@
     <configuration name="Runner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.javarush.Runner" />
       <module name="serhii.yegorov.encoder" />
-      <option name="PROGRAM_PARAMETERS" value="ENCRYPT $PROJECT_DIR$/releases/1.txt 20 " />
+      <option name="PROGRAM_PARAMETERS" value="ENCRYPT $PROJECT_DIR$/src/main/resources/test 20 " />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.javarush.*" />
@@ -114,7 +121,23 @@
       <option name="project" value="LOCAL" />
       <updated>1701795285693</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Update">
+      <option name="closed" value="true" />
+      <created>1701804280993</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1701804280993</updated>
+    </task>
+    <task id="LOCAL-00005" summary="add //TODO">
+      <option name="closed" value="true" />
+      <created>1701804385593</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1701804385593</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -132,7 +155,9 @@
     <MESSAGE value="Creating a project" />
     <MESSAGE value="Added classes" />
     <MESSAGE value="added implementation worked" />
-    <option name="LAST_COMMIT_MESSAGE" value="added implementation worked" />
+    <MESSAGE value="Update" />
+    <MESSAGE value="add //TODO" />
+    <option name="LAST_COMMIT_MESSAGE" value="add //TODO" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -142,10 +167,16 @@
           <line>46</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/javarush/CaesarCipher.java</url>
+          <line>8</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
+        <watch expression="text.toCharArray().length" language="JAVA" />
         <watch expression="Paths.get(filePath).getFileName()" />
         <watch expression="Paths.get(filePath).getFileSystem()" />
         <watch expression="Paths.get(filePath).toAbsolutePath()" />
@@ -153,6 +184,8 @@
         <watch expression="Paths.get(filePath).toRealPath()" />
         <watch expression="Paths.get(filePath).getRoot()" />
         <watch expression="Paths.get(filePath).getParent()" />
+        <watch expression="(line - base + key + ALPHABET_SIZE) " />
+        <watch expression="ALPHABET_SIZE + base" />
       </configuration>
     </watches-manager>
   </component>
