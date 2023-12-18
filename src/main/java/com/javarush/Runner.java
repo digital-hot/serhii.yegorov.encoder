@@ -2,7 +2,7 @@ package com.javarush;
 
 import java.util.Scanner;
 
-public class Runner {
+class Runner {
 
 
     public static void main(String[] args) {
