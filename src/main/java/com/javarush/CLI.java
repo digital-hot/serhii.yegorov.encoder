@@ -3,6 +3,7 @@ package com.javarush;
 //Клас для взаємодії з користувачем через командний рядок.
 
 class CLI {
+    CaesarCipher caesarCipher = new CaesarCipher();
     void processArguments(String[] args) {
         String command = args[0].toUpperCase();
         String filePath = args[1];
@@ -19,7 +20,7 @@ class CLI {
         // Додайте код для шифрування файлу з вказаним ключем
         FileService fileService = new FileService();
         String listSt = fileService.readString(filePath);
-        String encrypt = CaesarCipher.encrypt(listSt, key);
+        String encrypt = caesarCipher.encrypt(listSt, key);
 
         fileService.writeLines(filePath+"ENCRYPT", encrypt);
         System.out.println("Encrypting file: " + filePath + " with key: " + key);
@@ -29,7 +30,7 @@ class CLI {
         // Додайте код для розшифрування файлу з вказаним ключем
         FileService fileService = new FileService();
         String listSt = fileService.readString(filePath);
-        String encrypt = CaesarCipher.decrypt(listSt, key);
+        String encrypt = caesarCipher.decrypt(listSt, key);
 
         fileService.writeLines(filePath+"DECRYPT", encrypt);
         System.out.println("Decrypting file: " + filePath + " with key: " + key);

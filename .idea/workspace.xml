@@ -9,7 +9,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="37ea55ff-c167-4e51-84e8-0cb00c2cbb7a" name="Changes" comment="Refactor" />
+    <list default="true" id="37ea55ff-c167-4e51-84e8-0cb00c2cbb7a" name="Changes" comment="10. CLI# Зміна на новий switch">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/CLI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javarush/CLI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/CaesarCipher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javarush/CaesarCipher.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -207,7 +211,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702977007270</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="10. CLI# Зміна на новий switch">
+      <option name="closed" value="true" />
+      <created>1702977290971</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1702977290971</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -235,9 +247,19 @@
     <MESSAGE value="4-6 FileService змінив модифікатор доступу з public на defoult(package-private)" />
     <MESSAGE value="7-8 CLI зміна модифікаторів доступу з public на defoult(package-private)&#10;&#10;9 Видалена процедура main" />
     <MESSAGE value="Refactor" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactor" />
+    <MESSAGE value="10. CLI# Зміна на новий switch" />
+    <option name="LAST_COMMIT_MESSAGE" value="10. CLI# Зміна на новий switch" />
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/javarush/CaesarCipher.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
         <watch expression="text.toCharArray().length" language="JAVA" />
