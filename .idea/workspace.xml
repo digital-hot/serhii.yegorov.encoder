@@ -9,14 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="37ea55ff-c167-4e51-84e8-0cb00c2cbb7a" name="Changes" comment="4-6 FileService змінив модифікатор доступу з public на defoult(package-private)">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/CLI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javarush/CLI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javarush/Runner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/RunnerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javarush/RunnerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/testENCRYPT" beforeDir="false" />
-    </list>
+    <list default="true" id="37ea55ff-c167-4e51-84e8-0cb00c2cbb7a" name="Changes" comment="Refactor" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -198,7 +191,23 @@
       <option name="project" value="LOCAL" />
       <updated>1702976042371</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="7-8 CLI зміна модифікаторів доступу з public на defoult(package-private)&#10;&#10;9 Видалена процедура main">
+      <option name="closed" value="true" />
+      <created>1702976761287</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1702976761287</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Refactor">
+      <option name="closed" value="true" />
+      <created>1702977007270</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1702977007270</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -224,7 +233,9 @@
     <MESSAGE value="значення 3 (magic number) винесено у константу" />
     <MESSAGE value="Реалізація класу RunnerService" />
     <MESSAGE value="4-6 FileService змінив модифікатор доступу з public на defoult(package-private)" />
-    <option name="LAST_COMMIT_MESSAGE" value="4-6 FileService змінив модифікатор доступу з public на defoult(package-private)" />
+    <MESSAGE value="7-8 CLI зміна модифікаторів доступу з public на defoult(package-private)&#10;&#10;9 Видалена процедура main" />
+    <MESSAGE value="Refactor" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactor" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

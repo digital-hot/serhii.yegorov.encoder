@@ -9,17 +9,10 @@ class CLI {
         int key = Integer.parseInt(args[2]);
 
         switch (command) {
-            case "ENCRYPT":
-                encryptFile(filePath, key);
-                break;
-            case "DECRYPT":
-                decryptFile(filePath, key);
-                break;
-            case "BRUTE_FORCE":
-                bruteForceDecrypt(filePath);
-                break;
-            default:
-                System.out.println("Invalid command. Please use ENCRYPT, DECRYPT, or BRUTE_FORCE.");
+            case "ENCRYPT" -> encryptFile(filePath, key);
+            case "DECRYPT" -> decryptFile(filePath, key);
+            case "BRUTE_FORCE" -> bruteForceDecrypt(filePath);
+            default -> System.out.println("Invalid command. Please use ENCRYPT, DECRYPT, or BRUTE_FORCE.");
         }
     }
     void encryptFile(String filePath, int key) {
