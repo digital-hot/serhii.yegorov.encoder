@@ -4,21 +4,8 @@ package com.javarush;
 import java.util.Collections;
 import java.util.Scanner;
 
-public class CLI {
-
-    private static final Scanner scanner = new Scanner(System.in);
-    private static int MAGIC_NUMBER = 3;
-    public static void main(String[] args) {
-        System.out.println("Welcome to Caesar Cipher Program!");
-
-        if (args.length == MAGIC_NUMBER) {
-            processArguments(args);
-        } else {
-            displayUsage();
-        }
-    }
-
-    public static void processArguments(String[] args) {
+class CLI {
+    void processArguments(String[] args) {
         String command = args[0].toUpperCase();
         String filePath = args[1];
         int key = Integer.parseInt(args[2]);
@@ -37,8 +24,7 @@ public class CLI {
                 System.out.println("Invalid command. Please use ENCRYPT, DECRYPT, or BRUTE_FORCE.");
         }
     }
-
-    private static void encryptFile(String filePath, int key) {
+    void encryptFile(String filePath, int key) {
         // Додайте код для шифрування файлу з вказаним ключем
         FileService fileService = new FileService();
         String listSt = fileService.readString(filePath);
@@ -48,7 +34,7 @@ public class CLI {
         System.out.println("Encrypting file: " + filePath + " with key: " + key);
     }
 
-    private static void decryptFile(String filePath, int key) {
+    void decryptFile(String filePath, int key) {
         // Додайте код для розшифрування файлу з вказаним ключем
         FileService fileService = new FileService();
         String listSt = fileService.readString(filePath);
@@ -58,12 +44,12 @@ public class CLI {
         System.out.println("Decrypting file: " + filePath + " with key: " + key);
     }
 
-    private static void bruteForceDecrypt(String filePath) {
+    void bruteForceDecrypt(String filePath) {
         //TODO Додайте код для автоматичного підбору ключа та розшифрування файлу
         System.out.println("Brute-force decrypting file: " + filePath);
     }
 
-    private static void displayUsage() {
+    void displayUsage() {
         System.out.println("Usage: java -jar myApp.jar command filePath key");
         System.out.println("Commands: ENCRYPT, DECRYPT, BRUTE_FORCE");
     }

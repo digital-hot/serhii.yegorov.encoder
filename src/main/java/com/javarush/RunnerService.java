@@ -3,7 +3,7 @@ package com.javarush;
 import java.util.Scanner;
 
 class RunnerService {
-
+    CLI cli = new CLI();
     void runWithCommandLine() {
         Scanner scanner = new Scanner(System.in);
 
@@ -20,12 +20,12 @@ class RunnerService {
         }
 
         String[] arguments = {command, filePath, String.valueOf(key)};
-        CLI.processArguments(arguments);
+        cli.processArguments(arguments);
     }
 
 
     void runWithArguments(String[] args) {
-        CLI.processArguments(args);
+        cli.processArguments(args);
     }
 
 }
