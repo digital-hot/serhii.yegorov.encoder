@@ -7,11 +7,11 @@ import java.util.Scanner;
 public class CLI {
 
     private static final Scanner scanner = new Scanner(System.in);
-
+    private static int MAGIC_NUMBER = 3;
     public static void main(String[] args) {
         System.out.println("Welcome to Caesar Cipher Program!");
 
-        if (args.length == 3) {
+        if (args.length == MAGIC_NUMBER) {
             processArguments(args);
         } else {
             displayUsage();
