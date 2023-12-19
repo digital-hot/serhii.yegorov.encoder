@@ -9,14 +9,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="37ea55ff-c167-4e51-84e8-0cb00c2cbb7a" name="Changes" comment="add //TODO">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/releases/1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/test" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/releases/serhii.yegorov.encoder.jar" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/serhii.yegorov.encoder.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/CaesarCipher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javarush/CaesarCipher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/FileService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javarush/FileService.java" afterDir="false" />
+    <list default="true" id="37ea55ff-c167-4e51-84e8-0cb00c2cbb7a" name="Changes" comment="значення 3 (magic number) винесіть у константу">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/javarush/RunnerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javarush/Runner.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +33,18 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="8f18712f-6256-448c-a66b-ad479586a2a3" />
+        <option name="url" value="git@github.com:digital-hot/serhii.yegorov.encoder.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -52,13 +59,15 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.Runner.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "dev",
     "project.structure.last.edited": "Artifacts",
     "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2"
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -137,7 +146,39 @@
       <option name="project" value="LOCAL" />
       <updated>1701804385593</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="T">
+      <option name="closed" value="true" />
+      <created>1702913379763</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1702913379763</updated>
+    </task>
+    <task id="LOCAL-00007" summary="T">
+      <option name="closed" value="true" />
+      <created>1702913477047</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1702913477047</updated>
+    </task>
+    <task id="LOCAL-00008" summary="зміна модифікатор доступу з public на defoult">
+      <option name="closed" value="true" />
+      <created>1702914626796</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1702914626796</updated>
+    </task>
+    <task id="LOCAL-00009" summary="значення 3 (magic number) винесіть у константу">
+      <option name="closed" value="true" />
+      <created>1702972689068</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1702972689073</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -157,7 +198,11 @@
     <MESSAGE value="added implementation worked" />
     <MESSAGE value="Update" />
     <MESSAGE value="add //TODO" />
-    <option name="LAST_COMMIT_MESSAGE" value="add //TODO" />
+    <MESSAGE value="Delete file test" />
+    <MESSAGE value="T" />
+    <MESSAGE value="зміна модифікатор доступу з public на defoult" />
+    <MESSAGE value="значення 3 (magic number) винесіть у константу" />
+    <option name="LAST_COMMIT_MESSAGE" value="значення 3 (magic number) винесіть у константу" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -166,11 +211,6 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/javarush/CLI.java</url>
           <line>46</line>
           <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/javarush/CaesarCipher.java</url>
-          <line>8</line>
-          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
