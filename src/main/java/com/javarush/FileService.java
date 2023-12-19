@@ -8,9 +8,9 @@ import java.nio.file.Path;
 import java.nio.file.StandardOpenOption;
 import java.util.List;
 
-public class FileService {
+class FileService {
 
-    public String readString(String filePath)  {
+    String readString(String filePath)  {
         try {
             return Files.readString(Path.of(filePath));
         } catch (IOException e) {
@@ -18,7 +18,7 @@ public class FileService {
         }
     }
 
-    public void writeLines(String filePath, String lines) {
+    void writeLines(String filePath, String lines) {
         try {
             Files.writeString(Path.of(filePath), lines, StandardOpenOption.CREATE, StandardOpenOption.WRITE);
         } catch (IOException e) {
