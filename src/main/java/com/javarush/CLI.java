@@ -1,8 +1,6 @@
 package com.javarush;
 
 //Клас для взаємодії з користувачем через командний рядок.
-import java.util.Collections;
-import java.util.Scanner;
 
 class CLI {
     void processArguments(String[] args) {
@@ -49,8 +47,4 @@ class CLI {
         System.out.println("Brute-force decrypting file: " + filePath);
     }
 
-    void displayUsage() {
-        System.out.println("Usage: java -jar myApp.jar command filePath key");
-        System.out.println("Commands: ENCRYPT, DECRYPT, BRUTE_FORCE");
-    }
 }
