@@ -4,6 +4,7 @@ package com.javarush;
 
 class CLI {
     CaesarCipher caesarCipher = new CaesarCipher();
+
     void processArguments(String[] args) {
         String command = args[0].toUpperCase();
         String filePath = args[1];
