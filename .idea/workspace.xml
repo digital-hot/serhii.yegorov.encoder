@@ -9,10 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="37ea55ff-c167-4e51-84e8-0cb00c2cbb7a" name="Changes" comment="12. CaesarCipher# зміна модифікатор доступу з public на defoult(package-private)&#10;13. CaesarCipher# усі методи не статистичні">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_05_12_2023,_15_45_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="37ea55ff-c167-4e51-84e8-0cb00c2cbb7a" name="Changes" comment="Виправлена назва константи" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -51,8 +48,14 @@
       </UrlAndAccount>
     </option>
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/javarush/RunnerService.java" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
@@ -103,6 +106,13 @@
         <item itemvalue="Application.Runner" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-17.0.9-corretto-17.0.9-8336523bb0d9-301ddabe" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -233,7 +243,23 @@
       <option name="project" value="LOCAL" />
       <updated>1702977844127</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Виправлена назва константи">
+      <option name="closed" value="true" />
+      <created>1704707547383</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1704707547383</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Виправлена назва константи">
+      <option name="closed" value="true" />
+      <created>1704709074813</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1704709074813</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -263,7 +289,8 @@
     <MESSAGE value="Refactor" />
     <MESSAGE value="10. CLI# Зміна на новий switch" />
     <MESSAGE value="12. CaesarCipher# зміна модифікатор доступу з public на defoult(package-private)&#10;13. CaesarCipher# усі методи не статистичні" />
-    <option name="LAST_COMMIT_MESSAGE" value="12. CaesarCipher# зміна модифікатор доступу з public на defoult(package-private)&#10;13. CaesarCipher# усі методи не статистичні" />
+    <MESSAGE value="Виправлена назва константи" />
+    <option name="LAST_COMMIT_MESSAGE" value="Виправлена назва константи" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
