@@ -1,38 +1,13 @@
 package com.javarush;
 
-import java.util.Scanner;
-
-public class Runner {
-
-
+class Runner {
+    static final int ARGUMENTS_SIZE = 3;
     public static void main(String[] args) {
-        if (args.length == 3) {
-            runWithArguments(args);
+        RunnerService runnerService = new RunnerService();
+        if (args.length == ARGUMENTS_SIZE) {
+            runnerService.runWithArguments(args);
         } else {
-            runWithCommandLine();
+            runnerService.runWithCommandLine();
         }
-    }
-
-    private static void runWithArguments(String[] args) {
-        CLI.processArguments(args);
-    }
-
-    private static void runWithCommandLine() {
-        Scanner scanner = new Scanner(System.in);
-
-        System.out.println("Enter command (ENCRYPT, DECRYPT, BRUTE_FORCE):");
-        String command = scanner.nextLine().toUpperCase();
-
-        System.out.println("Enter file path:");
-        String filePath = scanner.nextLine();
-
-        int key = 0;
-        if (!command.equals("BRUTE_FORCE")) {
-            System.out.println("Enter key:");
-            key = scanner.nextInt();
-        }
-
-        String[] arguments = {command, filePath, String.valueOf(key)};
-        CLI.processArguments(arguments);
     }
 }
